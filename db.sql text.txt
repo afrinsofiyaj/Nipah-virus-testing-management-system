@@ -1,0 +1,13 @@
+CREATE DATABASE nipah_testing;
+
+USE nipah_testing;
+
+CREATE TABLE tests (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    patient_name VARCHAR(100),
+    age INT,
+    gender ENUM('Male', 'Female', 'Other'),
+    test_date DATE,
+    test_result ENUM('Positive', 'Negative', 'Pending'),
+    remarks TEXT
+);
